@@ -12,15 +12,15 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra -Werror")
 set(CMAKE_CXX_FLAGS_DEBUG "-pg")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
+# OpenSSL
+find_package(OpenSSL REQUIRED)
+
 # boost
 set(Boost_ADDITIONAL_VERSIONS 1.74)
 find_package(Boost REQUIRED COMPONENTS unit_test_framework)
 
-# spdlog
-add_subdirectory(include/third_party/spdlog/)
-
-# zlib
-add_subdirectory(include/third_party/zlib/)
+# add third party libs
+add_subdirectory(include/third_party)
 
 # set the header includes directory
 include_directories(include/)

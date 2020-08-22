@@ -7,11 +7,11 @@ This library is currently under development, wait for an actual release before t
 ## Examples
 TODO
 
-The full documentation is available [here](blah).
+The full documentation is available [here](https://gupt-a.github.io/indr/).
 
-## Requirement
+## Dependencies
 For now I only wrote this with Linux servers in mind so if you want to run this on a Linux server
-just make sure you have Boost and OpenSSL installed, then build this with CMake. All other third-party
+just make sure you have Boost, OpenSSL and CMake installed, then build this with CMake. All other third-party
 code is included in this repository itself so you don't need to install anything else.
 
 
